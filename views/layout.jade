@@ -1,0 +1,24 @@
+!!! 5
+html
+  head
+    //title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    != body
+
+    script(src="/js/libs/jquery-1.7.1.min.js")
+    script(src="/js/libs/underscore.js")
+    script(src="/js/libs/backbone.js")
+
+    script(src="/js/models/page.js")
+    script(src="/js/models/widget.js")
+    script(src="/js/models/widget_control.js")
+
+    //script(src="/js/collections/pages.js")
+    script(src="/js/collections/widgets.js")
+    script(src="/js/collections/widget_controls.js")
+
+    script(src="/js/views/page.js")
+    script(src="/js/views/widget.js")
+
+    script(src="/js/spaces_app.js")
