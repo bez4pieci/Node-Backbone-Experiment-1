@@ -4,7 +4,7 @@ var widgets = [
     id: 1,
     type: 'Text',
     params: {
-      text: 'Second text (from API)'
+      text: 'This is the first widget'
     }
   },
   {

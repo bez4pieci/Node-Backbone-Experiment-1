@@ -10,12 +10,24 @@ SPACES.WidgetView = {
 
 SPACES.WidgetView.Text = Backbone.View.extend({
   initialize: function() {
-    //console.log('init widget ', this);
+    console.log('WidgetView.Text::init', this);
 
     //this.id = "widget_" + this.model.id;
     this.model.bind('change', this.render, this);
+    this.addControls();
     //this.render();
     //this.model.bind('destroy', this.remove, this);
+  },
+
+  addControls: function() {
+    this.controls = [];
+    this.controls.push(SPACES.ControlView.factory('TextEdit', {
+      textContainer: $(this.el)
+    }));
+  },
+
+  removeControls: function() {
+
   },
 
   render: function() {

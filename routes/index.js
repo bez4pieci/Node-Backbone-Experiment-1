@@ -10,7 +10,7 @@ exports.index = function(req, res){
       id: 1,
       type: 'Text',
       params: {
-        text: 'Second text'
+        text: 'This is the first widget'
       }
     },
     {
